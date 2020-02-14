@@ -57,7 +57,6 @@ endif()
 # Note we don't set WIN32 or _WINDOWS because
 # CMake provides that for us. As a sanity check make sure the option
 # is present.
-
 if (NOT "${CMAKE_CXX_FLAGS}" MATCHES "[/-]D[ ]*WIN32")
   message(FATAL_ERROR "\"/D WIN32\" is missing")
 endif()
